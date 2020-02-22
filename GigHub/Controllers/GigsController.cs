@@ -23,7 +23,6 @@ namespace GigHub.Controllers
 				Genres = _context.Genres.ToList()
 			};
 
-
 			return View(viewModel);
 		}
 
@@ -31,11 +30,15 @@ namespace GigHub.Controllers
 		[HttpPost]
 		public ActionResult Create(GigFormViewModel viewModel)
 		{
-
+			if (!ModelState.IsValid)
+			{
+				viewModel.Genres = _context.Genres.ToList();
+				return View("Create", viewModel); // The input fields will be displayed with validation messages. 
+			}
 			var gig = new Gig
 			{
 				ArtistId = User.Identity.GetUserId(),
-				DateTime = viewModel.DateTime,
+				DateTime = viewModel.GetDateTime(),
 				GenreId = viewModel.Genre,
 				Venue = viewModel.Venue
 			};
