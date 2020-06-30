@@ -232,6 +232,10 @@
     <Compile Include="Migrations\202005311753418_AddIsCanceledToGig.Designer.cs">
       <DependentUpon>202005311753418_AddIsCanceledToGig.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006291730074_AddNotification.cs" />
+    <Compile Include="Migrations\202006291730074_AddNotification.Designer.cs">
+      <DependentUpon>202006291730074_AddNotification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -241,6 +245,9 @@
     <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\Gig.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Notification.cs" />
+    <Compile Include="Models\NotificationType.cs" />
+    <Compile Include="Models\UserNotification.cs" />
     <Compile Include="ViewModels\GigsViewModel.cs" />
     <Compile Include="ViewModels\RegisterViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -352,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202005311753418_AddIsCanceledToGig.resx">
       <DependentUpon>202005311753418_AddIsCanceledToGig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006291730074_AddNotification.resx">
+      <DependentUpon>202006291730074_AddNotification.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
