@@ -39,6 +39,12 @@ span.field-validation-error {
 .voffset {
 	margin-top: 2px;
 }
+
+.popover {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
 .navbar-inverse {
 	background-color: #FF4342;
 	border-color: #ff4342;
@@ -50,6 +56,17 @@ span.field-validation-error {
 
 .navbar-inverse .navbar-brand {
 	color: #fff;
+}
+
+.navbar-inverse .notifications {
+	position: relative;	
+}
+
+.navbar-inverse .notifications .badge {
+	position: absolute;
+	top: 8px;
+	right: -1px;
+	background: #a80a0a;
 }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
@@ -117,6 +134,63 @@ h6,
 
 /* Page Level Styles */
 
+/*.gigs {
+	> li {
+		position: relative;
+		margin-bottom: 30px;
+		list-style: none;
+	}
+
+	> li .date {
+		background: red;
+		color: white;
+		text-align: center;
+		width: 60px;
+		-ms-border-radius: 8px;
+		border-radius: 8px;
+
+		.month {
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: bold;
+			padding: 2px 6px;
+		}
+
+		.day {
+			background: #f7f7f7;
+			color: #333;
+			font-size: 20px;
+			padding: 6px 12px;
+		}
+	}
+
+	> li .details {
+		position: absolute;
+		top: 0;
+		left: 70px;
+
+		.artist {
+			font-weight: bold;
+			display: block;
+		}
+
+		.genre {
+			font-size: 15px;
+		}
+	}
+
+	> li .actions {
+		font-size: 15px;
+		display: none;
+	}
+
+	> li:hover .actions {
+		display: block;
+	}
+}*/
+
+
+
 .gigs > li {
 	position: relative;
 	margin-bottom: 30px;
@@ -168,4 +242,50 @@ h6,
 
 .gigs > li:hover .actions {
 	display: block;	
+}
+
+/*.popover-notifications {
+	.popover-content {
+		padding: 0;
+	}
+
+	ul.notifications {
+		list-style: none;
+		padding-left: 0;
+
+		> li {
+			border-bottom: 1px solid #ddd;
+			padding: 10px;
+		}
+
+		> li:last-child {
+			border-bottom: none;
+		}
+
+		.highlight {
+			font-weight: bold;
+		}
+	}
+}*/
+
+.popover-notifications .popover-content {
+ padding: 0;
+}
+
+.popover-notifications ul.notifications {
+	list-style: none;
+	padding-left: 0;
+}
+
+.popover-notifications ul.notifications > li {
+	border-bottom: 1px solid #ddd;
+	padding: 10px;
+}
+
+.popover-notifications ul.notifications > li:last-child {
+	border-bottom: none;
+}
+
+.popover-notifications ul.notifications .highlight {
+	font-weight: bold;
 }
